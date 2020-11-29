@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>ANTOR'S FIRST FRONT END PROJECT</title>
+    <script>
+      function play(str) {
+        // body...
+      let displayField = document.getElementById('display');
+      if(str==='q'|| str==='Q'){
+         displayField.innerHTML = 'shironamhin';
+        }
+        else if(str==='w'|| str==='W'){
+          displayField.innerHTML = 'adverb';
+        }
+        else if(str==='e'|| str==='E'){
+          displayField.innerHTML = 'bad guy';
+        }
+        else if(str==='a'|| str==='A'){
+          displayField.innerHTML = 'jol shopno';
+        }
+        else if(str==='s'|| str==='S'){
+          displayField.innerHTML = 'modumaloti dake ay';
+        }
+        else if(str==='d'|| str==='D'){
+          displayField.innerHTML = 'play date';
+        }
+        else if(str==='z'|| str==='Z'){
+          displayField.innerHTML = 'maine royaan';
+        }
+        else if(str==='x'|| str==='X'){
+          displayField.innerHTML = 'jadukor';
+        }
+        else if(str==='c'|| str==='C'){
+          displayField.innerHTML = 'mayabi chokh';
+        }
+        var audio = document.getElementById(str);
+        audio.play();
+      }
+      window.document.onkeyup = function (event) {
+        // body...
+        let keyStroke=event.key;
+        if(keyStroke==='q'|| keyStroke==='Q'){
+          play('Q');
+        }
+        else if(keyStroke==='w'|| keyStroke==='W'){
+          play('W');
+        }
+        else if(keyStroke==='e'|| keyStroke==='E'){
+          play('E');
+        }
+        else if(keyStroke==='a'|| keyStroke==='A'){
+          play('A');
+        }
+        else if(keyStroke==='s'|| keyStroke==='S'){
+          play('S');
+        }
+        else if(keyStroke==='d'|| keyStroke==='D'){
+          play('D');
+        }
+        else if(keyStroke==='z'|| keyStroke==='Z'){
+          play('Z');
+        }
+        else if(keyStroke==='x'|| keyStroke==='X'){
+          play('X');
+        }
+        else if(keyStroke==='c'|| keyStroke==='C'){
+          play('C');
+        }
+      } 
+    </script>
+  </head>
+  <body>
+    <div class="container" id="drum-machine">
+    <h1 class="text-center">DRUM MACHINE</h1>
+
+    <div class="card my-3">
+    <div class="card-body">
+    <div class="text-center" id="display">NOTHING YET TO DISPLAY</div>
+    </div>
+    </div>
+
+    <button class="drum-pad btn btn-block btn-primary" id="drum-0" onclick="play('Q')">
+    Q
+    <audio src="./clip/song1.mp3" class="clip" id="Q">
+    </button>
+
+
+    <button class="drum-pad btn btn-block btn-primary" id="drum-1" onclick="play('W')">
+    W
+    <audio src="./clip/song2.mp3" class="clip" id="W">
+    </button>
+
+
+    <button class="drum-pad btn btn-block btn-primary" id="drum-2" onclick="play('E')">
+    E
+    <audio src="./clip/song3.mp3" class="clip" id="E">
+    </button>
+
+
+    <button class="drum-pad btn btn-block btn-primary" id="drum-3" onclick="play('A')">
+    A
+    <audio src="./clip/song4.mp3" class="clip" id="A">
+    </button>
+
+
+    <button class="drum-pad btn btn-block btn-primary" id="drum-4" onclick="play('S')">
+    S
+    <audio src="./clip/song5.mp3" class="clip" id="S">
+    </button>
+
+
+    <button class="drum-pad btn btn-block btn-primary" id="drum-5" onclick="play('D')">
+    D
+    <audio src="./clip/song6.mp3" class="clip" id="D">
+    </button>
+
+
+    <button class="drum-pad btn btn-block btn-primary" id="drum-6" onclick="play('Z')">
+    Z
+    <audio src="./clip/song7.mp3" class="clip" id="Z">
+    </button>
+
+
+    <button class="drum-pad btn btn-block btn-primary" id="drum-7" onclick="play('X')">
+    X
+    <audio src="./clip/song8.mp3" class="clip" id="X">
+    </button>
+
+
+    <button class="drum-pad btn btn-block btn-primary" id="drum-8" onclick="play('C')">
+    C
+    <audio src="./clip/song9.mp3" class="clip" id="C">
+    </button>
+
+
+    </div>
+  </body>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
